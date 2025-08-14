@@ -1,0 +1,26 @@
+body {
+    background: url('Imagenes/1.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+.form-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label, input, select, textarea {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.section-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
