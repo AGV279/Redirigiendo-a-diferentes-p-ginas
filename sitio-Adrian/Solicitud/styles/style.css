@@ -1,0 +1,56 @@
+.tabla-style{
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-bottom: 0.5px;
+    background-color: #ECE5CE; /* Fondo blanco para las tablas */
+    border: 0.5px solid #633c13; /* Borde café claro */
+    border-radius: 10px; /* Esquinas redondeadas */
+    overflow: hidden; 
+}
+
+.border-1{
+    border: 22px solid brown;
+    
+}
+
+.block{
+    display: block;
+}
+
+label{
+    border: none;
+}
+
+.label-format{
+    display: inline-block;
+    width: 50px;
+    border: thin ;
+}
+
+th{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #663300;
+}
+
+.td-1{
+    
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.td-2{
+    color: #996633;
+    text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.fondo{
+    background-color: #B3E5FC;
+}
+
+.fondo2{
+    background-color: #ECE5CE;
+}
+

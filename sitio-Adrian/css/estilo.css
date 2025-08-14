@@ -1,0 +1,99 @@
+body{
+    background-image: url("/proyecto-u1/src/sitio-Adrian/Fondos/FondoWoT.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.cont {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.dis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+br{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    background-color: rgba(255, 23, 23, 0.495);
+    color: #9fedfd;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+}
+
+table {
+    position: relative;
+    margin: auto;
+    background-color: rgba(216, 159, 36, 0.768);
+    border-radius: 15px;
+    overflow: hidden;
+    width: 70%;
+    border-collapse: collapse;
+    color: rgb(10, 246, 246);
+    font-size: x-large;
+}
+
+.photo {
+    display: block; 
+    margin: 10px auto; 
+}
+.info {
+    display: none;
+    position: absolute;
+    background-color: rgb(238, 183, 239);
+    border-radius: 8px;
+    z-index: 10;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateX(-20px);
+    width: 300px;
+    height: auto; 
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.info.visible {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.my-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .my-button:hover {
+    background-color: #45a049;
+  }
+  .my-button:active {
+    background-color: #3e8e41;
+  }
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 36px;
+}
+
+.p1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ff6c04ea;
+}
+
+.fondo{
+    background-color: rgba(191, 0, 255, 0.645);
+}

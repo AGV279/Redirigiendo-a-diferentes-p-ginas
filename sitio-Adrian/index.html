@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sitio-Adrian/css/estilo.css">
+    <title>Sitio Adrian</title>
+</head>
+<body>
+    <header>
+        <div class="cont">
+            <h1>Guerrero Valdepeña Adrian</h1>
+        </div>
+    </header>
+    <main>
+        <div class="cont">
+            <figure class="photo">
+                <img src="/sitio-Adrian/Fondos/yo.jpg" alt="Foto" width="250" height="330">
+            </figure>
+            <table>
+                <tr>
+                    <td colspan="3"><strong>Nombre:</strong><br>Guerrero Valdepeña Adrian</td>
+                    <td colspan="3"><strong>Grupo:</strong><br>3</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><strong>Matrícula:</strong><br>21680088</td>
+                    <td colspan="3"><strong>Carrera:</strong><br>ING. En Sistemas Computacionales</td>
+                </tr>
+                <tr>
+                    <td colspan="6" style="text-align: center;">
+                        <a href="/sitio-Adrian/Solicitud/Hoja1.html" style="color: rgba(229, 255, 0, 0.777); text-decoration: underline;">SOLICITUD DE EMPLEO</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <h2 style="font-size: xx-large; color: rgba(0, 255, 85, 0.889); text-align: center;">Mapa Sensitivo</h2>
+        <img src="/sitio-Adrian/Fondos/world-of-tanks-is-2-tank.jpg" alt="Imagen sensitiva" usemap="#sensitive-map" style="position: relative;">
+    <map name="sensitive-map">
+        <area shape="circle" coords="135,180,25" href="javascript:void(0);" alt="Josh Luca" 
+              onclick="showInfo('info-cañon', 160, 750);">
+        <area shape="circle" coords="480,247,50" href="javascript:void(0);" alt="Torreta"
+              onclick="showInfo('info-torreta', 900, 810);">
+        <area shape="circle" coords="522,377,50" href="javascript:void(0);" alt="Oruga"
+              onclick="showInfo('info-oruga', 900, 1200);">
+        <area shape="circle" coords="347,319,50" href="javascript:void(0);" alt="Chasis"
+              onclick="showInfo('info-cha', 250, 1100);">
+    </map>
+    <div id="info-cañon" class="info" style="background-color: rgb(62, 51, 51); color: rgb(255, 255, 255);">
+        <h3>Cañón</h3>
+        <p>El tanque pesado IS-2 (Iosef Stalin) de la 
+            Unión de Repúblicas Socialistas Soviéticas (URSS) 
+            estaba armado con un cañón D-10T, que era un 
+            derivado del cañón antitanque BS-3. Este cañón 
+            tenía una potencia de penetración de hasta 185 mm 
+            a 500 m a 0º con proyectiles normales. 
+        </p>
+        <span><a href="/sitio-Adrian/cañon.html" class="btn-read-more" style="color: rgb(70, 70, 69);">Leer más</a></span>
+    </div>
+    <div id="info-torreta" class="info" style="background-color: rgb(0, 123, 255); color: rgb(255, 255, 255);">
+        <h3>Torreta</h3>
+        <p>La torreta del tanque IS-2 tenía 90 mm 
+            de acero de refuerzo. Este tanque pesado 
+            fue construido en 1944 como una modificación 
+            del IS-1 y fue usado por los regimientos 
+            soviéticos en la Segunda Guerra Mundial.
+        </p>
+        <span><a href="/sitio-Adrian/torreta.html" class="btn-read-more" style="color: rgb(70, 70, 69);">Leer más</a></span>
+    </div>
+    <div id="info-oruga" class="info" style="background-color: rgb(0, 255, 85); color: rgb(255, 255, 255);">
+        <h3>Oruga</h3>
+        <p>Estas orugas están diseñadas para
+           proporcionar tracción y movimiento 
+           a los vehículos, especialmente aquellos 
+           que necesitan desplazarse sobre superficies 
+           irregulares. Son flexibles y duraderas, lo que 
+           les permite adaptarse a diferentes tipos de terrenos.
+        </p>
+        <span><a href="/sitio-Adrian/oruga.html" class="btn-read-more" style="color: rgb(70, 70, 69);">Leer más</a></span>
+    </div>
+    <div id="info-cha" class="info" style="background-color: rgb(255, 193, 7); color: rgb(255, 255, 255);">
+        <h3>Chasis</h3>
+        <p>El chasis del tanque IS-2 tenía las siguientes características: 
+            *La parte trasera del chasis estaba reforzada con 60 mm de acero. 
+            *El blindaje del chasis era de 110/90/60 mm. 
+            *El IS-2 era más bajo que la mayoría de los tanques pesados de su 
+            época, lo que era un factor importante en terrenos blandos. 
+            *El IS-2 tenía un problema de ensamblaje en la armadura, ya que la 
+            armadura interior podía desprenderse con un impacto fuerte.</p>
+        <span><a href="/sitio-Adrian/chasis.html" class="btn-read-more" style="color: rgb(70, 70, 69);">Leer más</a></span>
+    </div>
+        <script>
+            function showInfo(id, x, y) {
+                const allInfoBoxes = document.querySelectorAll('.info');
+                allInfoBoxes.forEach(info => {
+                    info.classList.remove('visible');
+                    info.style.display = 'none';
+                });
+
+                const info = document.getElementById(id);
+                info.classList.add('visible');
+                info.style.left = (x + 10) + 'px'; 
+                info.style.top = (y - 75) + 'px'; 
+                info.style.display = 'block'; 
+
+                setTimeout(() => hideInfo(id), 10000);
+            }
+
+            function hideInfo(id) {
+                const info = document.getElementById(id);
+                info.classList.remove('visible');
+                setTimeout(() => {
+                    info.style.display = 'none';
+                }, 300); 
+            }
+        </script>
+        
+        <h2 style="font-size: xx-large; color: rgba(0, 255, 85, 0.889); text-align: center;">Video y Audio</h2>
+        <div class="dis">
+            <video controls>
+                <source src="/sitio-Adrian/Fondos/VideoPag.mp4" type="video/mp4">Sin videos
+            </video>
+        </div>
+        <div class="dis">
+            <audio controls>
+                <source src="/sitio-Adrian/Fondos/cancion.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <br>
+        <a href="/sitio-equipo/index.html" class="my-button">Regresar</a>
+    </main>
+</body>
+</html>
